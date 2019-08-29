@@ -125,7 +125,10 @@ export default {
 
   mounted () {
     this.type = this.$store.getters.getBuyType
+    // 方法1：使用query获取参数
     this.courseTitle = this.$route.query.courseTitle
+    // 方法2：使用params获取参数
+    // this.courseTitle = this.$route.params.courseTitle
 
     // 改变价格
     if(this.type == 1 || this.type == 3){
