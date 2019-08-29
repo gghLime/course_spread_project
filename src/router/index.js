@@ -37,6 +37,7 @@ const router = new Router({
     },
     {
       // 订单页面
+      name: 'order',
       path: '/order',
       component: order,
       meta:{
