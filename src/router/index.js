@@ -44,7 +44,10 @@ const router = new Router({
         title: '购买课程'
       }
     }
-  ]
+  ],
+  scrollBehavior (to, from, savedPosition) {
+    return { x: 0, y: 300 }
+  }
 })
 
 router.push('/home')

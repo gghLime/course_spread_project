@@ -202,7 +202,7 @@
             </div>
           </div>
 
-          <ul id="courseTitle" class="course-menu">
+          <ul class="course-menu">
             <li :class="courseIndex == 0 ? 'on' : ''" @click='handleSwitchCourse(0)'>
               <div>Scratch·低年级课</div>
               <img src="../../assets/image/down_arrow.png" alt="">
@@ -213,7 +213,7 @@
             </li>
           </ul>
 
-          <div id="courseBody" class="course-body">
+          <div class="course-body">
             <img :class="courseIndex == 0 ? 'on' : ''" src="../../assets/image/SC.png" alt="SC课程">
             <img :class="courseIndex == 1 ? 'on' : ''" src="../../assets/image/PY.png" alt="PY课程">
           </div>
@@ -356,6 +356,7 @@ import Activity from '@/components/activity.vue'
 import Teacher from '@/components/teacher.vue'
 import AloneBuy from '@/components/aloneBuy.vue'
 import IndexBtn from '@/components/indexBtn.vue'
+import { mapState } from 'vuex'
 
 export default {
   components: {
@@ -385,6 +386,12 @@ export default {
       showTeacher: false,
       showAlone: false
     }
+  },
+
+  computed: {
+    ...mapState({
+      message: state => state.obj.message
+    })
   },
 
   created () {

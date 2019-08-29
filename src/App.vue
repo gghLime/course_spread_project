@@ -13,10 +13,10 @@ export default {
 <style>
 @media screen and (min-width: 1025px){
   #app{
-	margin: 0 auto;
-	width: 766px;
-	border-left: 1px solid #ccc;
-	border-right: 1px solid #ccc;
+  	margin: 0 auto;
+  	width: 766px;
+  	border-left: 1px solid #ccc;
+  	border-right: 1px solid #ccc;
   }
 }
 </style>

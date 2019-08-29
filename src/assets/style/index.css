@@ -413,6 +413,7 @@
 	justify-content: space-between;
 	margin: .3rem 0 .2rem 0;
 	font-size: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 .course-menu li{
 	width: 48%;
