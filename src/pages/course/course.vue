@@ -88,12 +88,22 @@ export default {
 
     // 跳转到订单页面
     toPageOrder () {
+      // 方法1：使用query
       this.$router.push({
         path: '/order',
         query: {
           courseTitle: this.currentTitle
         }
       })
+
+      // 方法2：使用params
+      // 要在路由配置文件给路由组件加上name属性
+      // this.$router.push({
+      //   name: 'order',
+      //   params: {
+      //     courseTitle: this.currentTitle
+      //   }
+      // })
     }
   }
 }
