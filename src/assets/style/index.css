@@ -621,15 +621,19 @@
 }
 
 /* 大于iPad Pro */
-@media screen and (min-width: 1366px){
-  .service-content{
-    top: 48%;
-  }
+@media screen and (min-width: 1025px){
   .join-group-fixed{
     left: 50%;
     margin-left: -384px;
     width: 768px;
     border-left: 1px solid #ccc;
     border-right: 1px solid #ccc;
+  }
+}
+
+/* 大于iPad Pro */
+@media screen and (min-width: 1366px){
+  .service-content{
+    top: 48%;
   }
 }
